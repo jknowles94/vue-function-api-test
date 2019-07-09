@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import {plugin} from 'vue-function-api';
+import { plugin } from 'vue-function-api';
 
 Vue.config.productionTip = false;
 Vue.use(plugin);

@@ -1,17 +1,32 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{count}}</h1>
+    <h1>Computed: {{computedCount}}</h1>
+    <Test :count="count"></Test>
+    <button @click="increment">Plus 1</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { value, computed } from 'vue-function-api';
+import Test from './components/Test.vue';
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    Test
+  },
+  setup() {
+    const count = value(0);
+    const increment = () => {
+      count.value++;
+    };
+    const computedCount = computed(() => count.value * 2);
+
+    return {
+      count,
+      computedCount,
+      increment
+    }
   }
 }
 </script>
