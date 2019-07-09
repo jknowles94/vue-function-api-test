@@ -1,4 +1,5 @@
 # vue-function-vue3
+A test to see how future Vue 3 will look - using the vue-function-api - https://github.com/vuejs/vue-function-api
 
 ## Project setup
 ```
