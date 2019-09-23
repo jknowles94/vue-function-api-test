@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-function-api": "^2.0.6"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@vue/composition-api": "^0.3.2",
     "@vue/cli-plugin-babel": "^3.9.0",
     "@vue/cli-plugin-eslint": "^3.9.0",
     "@vue/cli-service": "^3.9.0",

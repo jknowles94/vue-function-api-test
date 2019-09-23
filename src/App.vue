@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import { value, computed } from 'vue-function-api';
+import {ref, computed} from '@vue/composition-api';
 import Test from './components/Test.vue';
 export default {
   components: {
     Test
   },
   setup() {
-    const count = value(0);
+    const count = ref(0);
     const increment = () => {
       count.value++;
     };

@@ -1,5 +1,5 @@
 # vue-function-vue3
-A test to see how future Vue 3 will look - using the vue-function-api - https://github.com/vuejs/vue-function-api
+A test to see how future Vue 3 will look - using the vue-composition-api - https://vue-composition-api-rfc.netlify.com/
 
 ## Project setup
 ```
